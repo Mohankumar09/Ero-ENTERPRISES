@@ -1,0 +1,64 @@
+<div class="polywood-catalogue">
+  <h1>POLYWOOD's CATALOGUE</h1>
+  <p>
+    In the last 18 years, “Polywood” has become an undeniable part in manufacturing of PVC Profiles.
+    They produce good and quality PVC profiles because they continuously undertake research and developments
+    to produce high-quality products.
+  </p>
+
+  <div class="cd-full-width">
+    <div class="tm-img-gallery-container">
+      <div id="g1b1" class="grid-item">
+        <figure class="effect-bubba">
+          <img src="assets/poly/BLAZE 1_MainImage.png" alt="Image" class="img-fluid tm-img" 
+               (click)="openCarousel(['assets/poly/IMG-20240730-WA0028.jpg', 'assets/poly/IMG-20240730-WA0029.jpg', 'assets/poly/IMG-20240730-WA0030.jpg', 'assets/poly/IMG-20240730-WA0031.jpg','assets/poly/IMG-20240730-WA0032.jpg','assets/poly/IMG-20240730-WA0033.jpg','assets/poly/IMG-20240730-WA0034.jpg','assets/poly/IMG-20240730-WA0035.jpg','assets/poly/IMG-20240730-WA0036.jpg','assets/poly/IMG-20240730-WA0037.jpg'])">
+          <figcaption>
+            <h2 class="tm-figure-title"><span>BLAZE TEXTURE HEAVY</span></h2>
+            <p class="tm-figure-description"></p>
+          </figcaption>
+        </figure>
+      </div>
+      <div id="g1b2" class="grid-item">
+        <figure class="effect-bubba">
+          <img src="assets/poly/BLAZE 2_MainImage.png" alt="Image" class="img-fluid tm-img" 
+               (click)="openCarousel(['assets/poly/IMG-20240730-WA0019.jpg', 'assets/poly/IMG-20240730-WA0020.jpg', 'assets/poly/IMG-20240730-WA0021.jpg', 'assets/poly/IMG-20240730-WA0022.jpg','assets/poly/IMG-20240730-WA0023.jpg','assets/poly/IMG-20240730-WA0024.jpg','assets/poly/IMG-20240730-WA0025.jpg','assets/poly/IMG-20240730-WA0026.jpg','assets/poly/IMG-20240730-WA0027.jpg'])">
+          <figcaption>
+            <h2 class="tm-figure-title"><span>PLAIN TEXTURE HEAVY</span></h2>
+            <p class="tm-figure-description"></p>
+          </figcaption>
+        </figure>
+      </div>
+      <div id="g1b3" class="grid-item">
+        <figure class="effect-bubba">
+          <img src="assets/poly/BLAZE 3_MainImage.png" alt="Image" class="img-fluid tm-img" 
+               (click)="openCarousel(['assets/poly/IMG-20240730-WA0014.jpg', 'assets/poly/IMG-20240730-WA0015.jpg', 'assets/poly/IMG-20240730-WA0016.jpg', 'assets/poly/IMG-20240730-WA0017.jpg','assets/poly/IMG-20240730-WA0018.jpg'])">
+          <figcaption>
+            <h2 class="tm-figure-title"><span>MAJESTIC UPVC MAT SUPER HEAVY</span></h2>
+            <p class="tm-figure-description"></p>
+          </figcaption>
+        </figure>
+      </div>
+      <div id="g1b4" class="grid-item">
+        <figure class="effect-bubba">
+          <img src="assets/poly/BLAZE 4_MainImage.png" alt="Image" class="img-fluid tm-img" 
+               (click)="openCarousel(['assets/poly/IMG-20240730-WA0005.jpg', 'assets/poly/IMG-20240730-WA0006.jpg', 'assets/poly/IMG-20240730-WA0007.jpg', 'assets/poly/IMG-20240730-WA0008.jpg','assets/poly/IMG-20240730-WA0009.jpg'])">
+          <figcaption>
+            <h2 class="tm-figure-title"><span>CHESTNUT UPVC TEXTURE  SUPER HEAVY</span></h2>
+            <p class="tm-figure-description"></p>
+          </figcaption>
+        </figure>
+      </div>
+      <!-- Add other grid items here -->
+    </div>
+  </div>
+
+  <div *ngIf="showCarousel" class="carousel-modal">
+    <div class="carousel-content">
+      <button class="close-btn" (click)="closeCarousel()">×</button>
+      <div class="container">
+        <img *ngFor="let image of currentGroupImages" [src]="image" alt="Carousel Image">
+      </div>
+    </div>
+  </div>
+
+ 

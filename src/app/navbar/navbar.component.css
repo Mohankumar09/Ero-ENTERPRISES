@@ -1,0 +1,124 @@
+/* Navbar container styling */
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+  position: relative;
+  overflow: hidden; /* Ensure bubbles are contained within the header */
+}
+
+/* Logo container styling */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo image styling */
+.logo-container img {
+  width: 69px; /* Adjust the width of the logo */
+  height: auto;
+  margin-right: 0.5rem;
+}
+
+/* Brand name styling */
+.brand-name {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+/* Navigation styling */
+nav {
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  position: relative;
+  color: #000000;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #b0b0b0, #d3d3d3); /* Grey gradient for default state */
+  transition: all 0.3s ease;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 5px;
+  bottom: -5px; /* Adjust to ensure the underline is not too close to the text */
+  left: 0;
+  transform: scale(0);
+  transition: transform 0.5s ease;
+}
+
+nav a:hover {
+  color: #fff;
+  background: linear-gradient(90deg, #c9caca, #7c7d7d); /* Darker grey gradient for hover state */
+  box-shadow: 0 4px 15px rgba(124, 125, 125, 0.4); /* Adjusted shadow color */
+}
+
+nav a:hover::after {
+  transform: scale(1);
+}
+
+/* Bubble animation styles */
+@keyframes bubble {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-100vh) scale(2);
+    opacity: 0;
+  }
+}
+
+.bubble {
+  position: absolute;
+  bottom: -50px;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  animation: bubble 10s infinite ease-in-out;
+}
+
+.bubble:nth-child(2) {
+  width: 30px;
+  height: 30px;
+  left: 25%;
+  animation-duration: 12s;
+  animation-delay: 2s;
+}
+
+.bubble:nth-child(3) {
+  width: 15px;
+  height: 15px;
+  left: 50%;
+  animation-duration: 8s;
+  animation-delay: 4s;
+}
+
+.bubble:nth-child(4) {
+  width: 25px;
+  height: 25px;
+  left: 75%;
+  animation-duration: 14s;
+  animation-delay: 6s;
+}
+
+.bubble:nth-child(5) {
+  width: 10px;
+  height: 10px;
+  left: 90%;
+  animation-duration: 16s;
+  animation-delay: 8s;
+}

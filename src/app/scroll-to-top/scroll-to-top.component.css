@@ -1,0 +1,13 @@
+/* scroll-to-top.component.css */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.arrow-icon {
+    width: 40px;  /* Adjust the size as needed */
+    height: 40px; /* Adjust the size as needed */
+}

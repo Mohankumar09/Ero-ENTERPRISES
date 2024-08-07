@@ -1,0 +1,85 @@
+/* Container styling */
+.tm-img-gallery-container {
+  margin: 2rem;
+  padding: rem;
+  border-radius: 10px;
+  background-color:  #e1b1f9; /* Light background for better contrast */
+  text-align: center;
+}
+
+.tm-img-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between items */
+}
+
+.grid-item {
+  width: calc(25% - 15px); /* 4 items per row with a gap */
+  box-sizing: border-box;
+  position: relative;
+  
+}
+
+.effect-bubba {
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.effect-bubba img {
+  width: 100%;
+  height: auto;
+  max-height: 200px; /* Adjust the max-height to control the image size */
+  
+}
+
+.effect-bubba figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  transition: opacity 0.5s ease;
+}
+
+.effect-bubba:hover img {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.tm-figure-title {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.tm-figure-description {
+  font-size: em;
+  margin: 5px 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: underline;
+  font-size: 0.9em;
+}
+
+a:hover {
+  color: #f0f0f0;
+}
+
+/* Title styling */
+.tm-gallery-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.tm-text {
+  color: #666;
+  text-align: center;
+  font-size: 1em;
+}
+
+

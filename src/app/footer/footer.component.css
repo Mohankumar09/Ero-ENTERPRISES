@@ -1,0 +1,214 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+.footer-container {
+  background-color: #403f3f;
+  color: #fff;
+  padding: 20px 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 10px;
+  min-width: 200px;
+  text-align: center; /* Center text inside each section */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the logo and company name horizontally */
+  gap: 10px;
+}
+
+.footer-logo {
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+}
+
+.company-name {
+  font-size: 1.5em;
+  margin: 0;
+  font-weight: 700;
+}
+
+.footer-section h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #f90;
+  font-weight: 700;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #f90;
+}
+
+.footer-section p a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section p a:hover {
+  color: #f90;
+}
+
+/* Social Icons Container */
+.social-icons {
+  display: flex;
+  justify-content: center; /* Centering the social icons */
+  gap: 10px;
+}
+
+.social-icons a {
+  position: relative;
+  display: inline-block;
+  width: 30px; /* Ensuring the anchor has the same dimensions as the images */
+  height: 30px; /* Ensuring the anchor has the same dimensions as the images */
+  border-radius: 50%; /* Ensuring the anchor has the same shape as the images */
+}
+
+.social-icons a img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%; /* Add border-radius to make the images circular */
+}
+
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #444;
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-section {
+    text-align: center;
+  }
+  
+  .logo-container {
+    justify-content: center;
+  }
+  
+  .footer-logo {
+    width: 40px; /* Adjust size as needed */
+  }
+  
+  .company-name {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-section {
+    padding: 5px;
+  }
+  
+  .footer-logo {
+    width: 30px; /* Adjust size as needed */
+  }
+  
+  .company-name {
+    font-size: 1em;
+  }
+  
+  .footer-bottom {
+    font-size: 0.8em;
+  }
+}
+
+.Email-logo {
+  width: 28px;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+/* Bubble animation styles */
+@keyframes bubble {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-100vh) scale(2);
+    opacity: 0;
+  }
+}
+
+.bubble {
+  position: absolute;
+  bottom: -50px;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.5); /* Light color for visibility on dark background */
+  border-radius: 50%;
+  animation: bubble 10s infinite ease-in-out;
+  z-index: 0; /* Ensure bubbles appear behind footer content */
+}
+
+.bubble:nth-child(2) {
+  width: 30px;
+  height: 30px;
+  left: 25%;
+  animation-duration: 12s;
+  animation-delay: 2s;
+}
+
+.bubble:nth-child(3) {
+  width: 15px;
+  height: 15px;
+  left: 50%;
+  animation-duration: 8s;
+  animation-delay: 4s;
+}
+
+.bubble:nth-child(4) {
+  width: 25px;
+  height: 25px;
+  left: 75%;
+  animation-duration: 14s;
+  animation-delay: 6s;
+}
+
+.bubble:nth-child(5) {
+  width: 10px;
+  height: 10px;
+  left: 90%;
+  animation-duration: 16s;
+  animation-delay: 8s;
+}
+
+/* Ensure footer content stays above bubbles */
+.footer-container {
+  position: relative;
+}

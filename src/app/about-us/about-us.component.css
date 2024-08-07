@@ -1,0 +1,52 @@
+
+
+.about-us {
+  margin: 2rem; /* Adjust the margin as needed */
+  padding: 2rem;
+  background-color: #c3eba6;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem; /* Add margin-bottom to create space between the about-us section and the footer */
+}
+
+.about-us h1, .about-us h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.about-us p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.vision-mission, .products-accessories {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.vision, .mission, .polywood-products, .ero-products, .accessories {
+  flex: 1;
+  padding: 1rem;
+  background-color: #79bd56;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.vision h2, .mission h2, .polywood-products h2, .ero-products h2, .accessories h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.vision p, .mission p, .polywood-products p, .ero-products p, .accessories p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+}
+

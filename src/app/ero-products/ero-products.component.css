@@ -1,0 +1,102 @@
+
+/* Container Styling for ERO Products */
+.ero-catalogue {
+  margin: 2rem;
+  padding: 2rem;
+  background-color: #c5a0c9;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  
+}
+
+/* General styling for the ERO Products section */
+.cd-full-width {
+  width: 100%;
+}
+
+.container-fluid {
+  padding: 0 15px;
+}
+
+.js-tm-page-content {
+  padding: 60px 0;
+}
+
+.tm-img-gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  
+}
+
+.tm-img-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+
+.grid-item {
+  flex: 1 1 calc(20% - 20px); /* Four items per row with spacing */
+  margin: 10px;
+  text-align: center;
+}
+
+.grid-item img {
+  cursor: pointer;
+  border-radius: 10px; /* Adjust the value as needed */
+}
+
+.effect-bubba {
+  position: relative;
+  overflow: hidden;
+}
+
+.effect-bubba img {
+  width: 100%;
+  height: auto;
+  transition: all 0.3s;
+}
+
+.effect-bubba:hover img {
+  transform: scale(1.1);
+}
+
+.static-title {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #080808;
+}
+
+.tm-figure-title {
+  display: none; /* Hide the title inside figcaption */
+}
+
+.tm-img-gallery-info-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tm-img-gallery-info-container h2,
+.tm-img-gallery-info-container p {
+  color: #fff;
+}
+
+@media (max-width: 500px) {
+  .grid-item {
+      flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 300px) {
+  .grid-item {
+      flex: 1 1 100%;
+  }
+}
