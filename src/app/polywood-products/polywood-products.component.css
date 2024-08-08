@@ -1,22 +1,24 @@
 /* Container Styling */
 .polywood-catalogue {
-  margin: 2rem;
-  padding: 2rem;
-  background-color: #a6a9a8;
-  border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  display:grid;
+  background-image: url('/assets/gallery/ero wood.jpg'); /* Replace with your image path */
+  background-size: cover; /* Adjusts the size of the background image */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  border-radius: 1px;
   text-align: center;
+  color: white; /* Ensures text is readable against the background image */
 }
 
 .polywood-catalogue h1 {
   font-size: 2.5rem;
-  color: #333;
+  color: #000000;
   margin-bottom: 1rem;
 }
 
 .polywood-catalogue p {
   font-size: 1.2rem;
-  color: #555;
+  color: #ffffff;
   line-height: 1.6;
   max-width: 600px;
   margin: 0 auto;
