@@ -1,6 +1,6 @@
 .contact-us {
   position: relative; /* Ensure positioning context for map container */
-  padding: 3em;
+  padding: 2rem;
   background-color: #ccccb3;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
